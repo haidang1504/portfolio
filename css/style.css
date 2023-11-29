@@ -150,7 +150,7 @@ header .navbar-nav li a:hover::after {
   top: 0;
   height: 100%;
   left: 0;
-  background-color: #00000030;
+  background-color: #00000030#0000005e;
 }
 
 .serivce_top {
@@ -160,9 +160,12 @@ header .navbar-nav li a:hover::after {
 }
 
 .serivce_bottom .card {
-  padding: 3rem 1.5rem;
-  background-color: #ffffff00;
-  backdrop-filter: blur(20px);
+  padding: 40px 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;
 }
 
 .serivce_bottom .card .card-body i {
@@ -184,5 +187,89 @@ header .navbar-nav li a:hover::after {
 .serivce_bottom .card:hover {
   background-color: black;
   border-color: white;
+  transition: all 0.5s;
+}
+
+/* award */
+#award {
+  position: relative;
+}
+
+.award_content {
+  background-image: url(../img/award.1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: bottom left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.row .award_left {
+  padding: 40px;
+  background: #ffffff59;
+  box-shadow: 0 0 20px #00000066;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+}
+.row .award_left h2 {
+  color: black;
+}
+
+.row .award_left p {
+  color: gray;
+}
+
+.row .award_right {
+  padding-top: 35px;
+}
+
+.row .award_right p {
+  color: gray;
+}
+
+/* footer  */
+#footer {
+  background-color: black;
+}
+
+.footer_top a {
+  margin-right: 10px;
+  color: gray;
+}
+
+.footer_top i {
+  padding: 11px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  transition: all 0.5s;
+}
+
+.footer_top i:hover {
+  color: green;
+  border: 1px solid green;
+  transition: all 0.5s;
+}
+
+.footer_bottom {
+  border-top: 1px solid gray;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer_bottom p {
+  color: gray;
+}
+
+.footer_bottom a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer_bottom a:hover {
+  color: green;
   transition: all 0.5s;
 }
