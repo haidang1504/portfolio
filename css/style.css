@@ -1,0 +1,92 @@
+* {
+  font-family: "Hind", sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+header .navbar-brand {
+  font-size: 2.3rem;
+}
+
+header .navbar-brand i {
+  color: green;
+}
+
+header .navbar-brand span {
+  color: white;
+}
+
+header .navbar-nav li {
+  margin-left: 1rem;
+}
+
+header .navbar-nav li a {
+  color: white;
+}
+
+header .navbar-nav li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: green;
+  transition: 0.5s;
+}
+
+header .navbar-nav li a.active::after {
+  width: 100%;
+}
+
+header .navbar-nav li a.active {
+  color: green !important;
+}
+
+header .navbar-nav li a:hover {
+  color: green;
+}
+
+header .navbar-nav li a:hover::after {
+  width: 100%;
+}
+
+/* carousel */
+
+.carousel .avatar {
+  width: 120px;
+  height: 120px;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+.carousel-item img {
+  height: 100%;
+}
+.carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 3px;
+  background-color: gray;
+}
+
+.carousel-indicators button.active {
+  background-color: green !important;
+}
