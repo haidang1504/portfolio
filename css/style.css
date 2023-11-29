@@ -90,3 +90,99 @@ header .navbar-nav li a:hover::after {
 .carousel-indicators button.active {
   background-color: green !important;
 }
+
+/* project  */
+.project__content .card {
+  border: none;
+  box-shadow: 0 0 10px gray;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 1.6rem;
+}
+
+.project__content .card .card-body {
+  border: 1px solid transparent;
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.project__content .card:hover .card-body {
+  border-color: green;
+}
+
+.project__content .card .card-body h4 {
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+.project__content .card:hover .card-body h4 {
+  color: green;
+}
+
+#project .nav-pills .nav-link.active,
+#project .nav-pills .show > .nav-link {
+  background-color: green;
+  color: white;
+  border-color: green !important;
+}
+
+.nav-pills .nav-link {
+  color: black;
+  border: 0.2px solid black;
+}
+.nav-item {
+  padding-right: 1rem;
+}
+
+/* serivce */
+#serivce {
+  background-image: url(../img/h3.jpg);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+}
+#serivce .overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+  background-color: #00000030;
+}
+
+.serivce_top {
+  color: white;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.serivce_bottom .card {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff00;
+  backdrop-filter: blur(20px);
+}
+
+.serivce_bottom .card .card-body i {
+  font-size: 2.5rem;
+  color: green;
+  padding-bottom: 20px;
+}
+
+.serivce_bottom .card .card-body h4 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.serivce_bottom .card .card-body p {
+  color: white;
+  font-size: 1rem;
+}
+
+.serivce_bottom .card:hover {
+  background-color: black;
+  border-color: white;
+  transition: all 0.5s;
+}
